@@ -62,7 +62,7 @@ function extract (options) {
 
 function auth (options) {
   if (options.username) {
-    return 'Basic ' + new Buffer(options.username + ':' + options.password).toString('base64');
+    return 'basic ' + new Buffer(options.username + ':' + options.password).toString('base64');
   }
   return '';
 }
